@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your website for search engines.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Glamour_Girl_2024">
+    <title>Glamour_Girl_2024</title>
+    <link rel="stylesheet" href="1st.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="channels4_profile.jpg" alt="Channel Logo" />
+        </div>
+        <h1><center>Glamour Girl 2024</center></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <section id="about">
+            <h2><center>About Us</center></h2>
+            <p><center>This YouTube channel focuses on skincare and beauty products, providing viewers with expert insights, product reviews, and practical tips for enhancing their daily beauty routines. Each video aims to educate and empower individuals to make informed choices about their skincare regimens, exploring various brands, ingredients, and techniques tailored to diverse skin types. Join us for engaging content that helps you achieve healthy, radiant skin and discover the latest trends in beauty.
+                <center>Thank you!!!</center></center></p> 
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="search">
+            <h2>Search</h2>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchContent()">Search</button>
+            <div id="searchResults"></div>
+        </section>
+
+        <section id="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form action="subscribe.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="comments">
+            <h2>Comments</h2>
+            <div id="commentList"></div>
+            <form onsubmit="addComment(event)">
+                <label for="comment">Leave a comment:</label>
+                <textarea id="comment" required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>1. What kind of beauty products do you review?</h3>
+                <p>We review all kinds of beauty and makeup products, including normal, affordable, and branded products.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. Do you share honest reviews of beauty and makeup products?</h3>
+                <p>Yes, we share honest reviews of every beauty and makeup product we review.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Join Us For More!!!!</h2>
+        <div class="social-media">
+            <a href="https://www.instagram.com/glamour_girl2024/profilecard/?igsh=NG9ybnAydHFxeTRz" target="_blank">Instagram</a>
+            <a href="https://youtube.com/@glamour_girl2024?si=vXcJOXzsHIRn4fcM" target="_blank">YouTube</a>
+        </div>
+    </footer>
+
+    <script src="1st.js"></script>
+</body>
+</html>
